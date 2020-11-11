@@ -1,0 +1,128 @@
+@import 'variables';
+.contenedor1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    position: relative;
+    .caja{
+        position: relative;
+        top: -160px;
+        display: flex;
+        align-items: center;
+        width: 40%;
+        max-width: 500px;
+        padding: 50px;
+        background: $blanco;
+        box-shadow: 0 0 25px rgba(0, 0, 0, .25);
+        img{
+            padding: 30px;
+            padding-left: 0;
+        }
+        h2{
+        margin-bottom: 20px;
+
+        }
+        p{
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+  
+        }
+    }
+    .caja2{
+        position: relative;
+        top: -160px;
+        display: flex;
+        align-items: center;
+        width: 40%;
+        max-width: 500px;
+        padding: 50px;
+        background: $blanco;
+        box-shadow: 0 0 25px rgba(0, 0, 0, .25);
+        img{
+            padding: 30px;
+            padding-left: 0;
+        }
+        h2{
+        margin-bottom: 40px;
+
+        }
+        p{
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+
+        } 
+    }  
+}
+
+@media (max-width: 1050px){
+    .contenedor1{
+        background: $gris;
+        top: -50px;
+        .caja{
+            position: relative;
+            top: auto;
+            box-shadow: none;
+            background: none;
+            h2{
+                margin-bottom: 0px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        .caja2{
+            position: relative;
+            top: auto;
+            box-shadow: none;
+            background: none;
+            h2{
+                margin-bottom: 10px;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 830px){
+    .contenedor1{
+        display: flex;
+        justify-content: space;
+        align-items: center;
+        height: 1300px;
+        .caja{
+            flex-direction: column;
+            height: 1200px;
+            img{
+                padding: 0px;
+                width: 200px;
+                margin-bottom: 30px;
+            }
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .caja2{
+            flex-direction: column;
+            position: absolute;
+            height: 0px;
+            img{
+                padding: 0;
+                width: 200px;
+                margin-bottom: 30px;
+            }
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}

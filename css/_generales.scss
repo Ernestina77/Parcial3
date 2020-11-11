@@ -1,0 +1,42 @@
+@import 'variables';
+*{
+    font-family: 'roboto', sans-serif;
+    box-shadow: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: $light;
+    h1, h2, h3, p, button{
+        color: $negro;
+    }
+}
+.regular{
+    font-weight: $regular;
+}
+.bold{
+    font-weight: $bold;
+}
+button{
+    background: $naranja;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    transition: ease-in-out .15s;
+    cursor: pointer;
+    &:hover{
+        background: $naranja;
+    }
+
+}
+h1, h2{
+    font-weight: $bold;
+}
+h2{
+    font-size: 2rem;
+    font-weight: $regular;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
