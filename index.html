@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="icono"><img src="img/home.png" alt=""></div>
+        </div>
+        <div class="enlaces">
+            <a href="#">METALIO</a>
+            <a href="#">COSTA DEL SOL</a>
+            <a href="#">EL CUCU</a>
+            <a href="#">EL TUNCO</a>
+            <a href="#">LAS TUNAS</a>
+
+        </div>       
+    </nav>
+    <div class="redes1" data-aos="fade-down-left" data-aos-delay="2500">
+        <a href="#"><i class="fas fa-user-alt"></i></a>
+    </div>
+    <div class="redes2" data-aos="fade-down-left" data-aos-delay="2400">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <div class="redes3" data-aos="fade-down-left" data-aos-delay="2350">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <header style="background: url('img/fondo1.png');">
+     <h1 data-aos="fade-up" data-aos-delay="200">EL SALVADOR</h1>
+    </header>
+    <div class="degradado" id="degradado"></div>
+
+    <nav class="movil" id="movil">
+        <a href="#" class="link">METALIO</a>
+        <a href="#" class="link">COSTA DEL SOL</a>
+        <a href="#" class="link">EL CUCU</a>
+        <a href="#" class="link">EL TUNCO</a>
+        <a href="#" class="link">LAS TUNAS</a>
+        <div class="salir" id="salir">Salir</div>
+    </nav>
+    
+    <div class="btnMenu" id="btnMenu"><i class="fas fa-bars"></i></div>
+
+    <section>
+        <div>
+            <h1>Metalio</h1>
+            <p>Metalío es una de las muchas playas que se pueden encontrar en el territorio que pertenece a la República de El Salvador; para prevenir que se generen dudas sobre esta playa es que aquí se expondrán sus características de mayor relevancia.</p>
+        </div>
+    </section>
+    <div class="contacto">
+        <form class="formulario" data-aos="zoom-in-down" data-aos-delay="1500">
+            <h1>Formulario</h1>
+            <div class="divisor"></div>
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"
+                placeholder="Escribir aqui..." required></input>
+            </div>
+            <div class="campo">
+                <label for="nombre">Correo:</label>
+                <input type="emaíl" id="Correo" name="Correo"
+                placeholder="Escribir aqui..." required></input>
+            </div>  
+            <div class="campo">
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave"
+                placeholder="Escribir aqui..." required></input>
+            </div>
+            <div class="campo">
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion" id="descripcion"
+                placeholder="Escribir aqui..."></textarea>
+            </div>
+            <div class="campo">
+                <label for="Fecha">Fecha:</label>
+                <input type="date" id="Fecha" name="Fecha" required></input>
+            </div>
+            <div class="campo">
+                <label for="Hora">Hora:</label>
+                <input type="time" id="Hora" name="Hora" required></input>
+            </div>
+            <div class="campo">
+                <select name="país" >
+                    <option value="">-Seleccionar país-</option>
+                    <option value="El Savador">El Salvador</option>
+                    <option value="Guatemal">Guatemal</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Panamá">Panamá</option>
+                    <option value="Mexíco">Mexíco</option>
+                    <option value="United States">United States</option>
+                </select>
+            </div>
+            <div class="campo-1">
+                <p>Selecione su género</p>
+                <input type="radio" value="Hombre" id="Hombre" name="genero"></input>
+                <label for="Hombre">Hombre</label>
+                <input type="radio" value="Mujer" id="Mujer" name="genero"></input>
+                <label for="Mujer">Mujer</label>
+            </div>
+            <div class="botones">
+                <input type="submit" value="Envíar"></input>
+                <input type="reset" class="rojo" value="Limpiar"></input>
+    
+            </div>
+        </form>
+    </div>
+    <script> 
+        AOS.init();
+    </script>
+    <footer>
+        2020 by Ernestina Burgos. Proudly created with VS
+    </footer>
+    <script src="menus.js"></script>
+</body>
+</html>
